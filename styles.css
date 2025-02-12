@@ -1,0 +1,218 @@
+body {
+    display: flex;
+    display: 100%;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ----------> left side <-----------*/
+
+.left-div{
+    flex: 0 0 60%;
+    background: linear-gradient(140.72deg, #EAECF0 -43.62%, #6C03C0 91.63%);
+    box-sizing: border-box;
+}
+
+.hrm{
+    font-size: 3rem;
+    margin-inline-start: 0%;
+    margin-top: 3%;
+    color: #EAECF0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2.5rem;
+}
+
+.manage{
+    margin-top: -2rem;
+    color: #EAECF0;
+    margin-left: 2.5rem;
+}
+
+.org{
+    margin-top: -1rem;
+    color: #EAECF0;
+    margin-left: 2.5rem;
+}
+
+.img{
+    height: 21rem;
+    width: 45vw;
+    margin-bottom: 0rem;
+}
+
+.look{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #EAECF0;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 2.5rem;
+}
+
+.multi{
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    color: #EAECF0;
+    font-size: 1.7rem;
+    font-stretch: expanded ;
+    font-weight: bold;
+    margin-left: 2.5rem;
+}
+
+.mgt{
+    margin-top: 1rem;
+    color: #EAECF0;
+    font-size: 0.9rem;
+    margin-left: 2.5rem;
+}
+
+.pay{
+    margin-top: -1rem;
+    color: #EAECF0;
+    font-size: 0.9rem;
+    margin-left: 2.5rem;
+}
+
+.cap{
+    margin-top: -1rem;
+    color: #EAECF0;
+    font-size: 0.9rem;
+    margin-left: 2.5rem;
+}
+
+/* ----------> right side <-----------*/
+
+.back-button{
+    margin-left: 1rem;
+}
+
+.right-div{
+    flex: 0 0 40%;
+    width: 15%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.create{
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    text-align: center;
+}
+
+.welcome{
+    margin-left: 9rem;
+    color: rgb(116, 118, 118);
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 20rem;
+}
+
+.form{
+    width: 100%;
+    border: 0;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    gap:2rem
+
+}
+
+.terms{
+    color: black;
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 0.2rem;
+}
+.terms-p{
+    font-size: 12px;
+    margin-top: -2rem;
+    margin-left: 2rem;
+    color: #0c8ff3;
+    margin-top: -2rem;
+    margin-bottom: 0.5rem;
+    
+}
+.terms-p span{
+    font-size: 12px;
+    color: black;
+    margin-top: -2rem;
+    
+}
+.sign-up-btn{
+    display: inline-block;
+    text-align: center;
+    font-family: 'popins';
+    font-size: 15px;
+    margin-left: 30px;
+    padding-bottom: 10px 0px;
+    margin-top: -2rem;
+    background-color: blueviolet;
+    color: white;
+    font-size: 12px;
+    margin-left: 2rem;
+    font-size: 1rem;
+    padding: 10px 100px ;
+
+}
+
+/* ----------> mediaquery <-----------*/
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column; /* Stack elements for mobile */
+        height: auto; /* Allow scrolling */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .left-div {
+        display: block; 
+        flex: none;
+        width: 100%;
+        height: auto; /* Allow content to expand */
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center; /* Center text if needed */
+    }
+
+    .right-div {
+        flex: none;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .create, .welcome {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .sign-up-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
